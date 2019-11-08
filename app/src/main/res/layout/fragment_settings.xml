@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_dimen">
+
+        <TextView
+            android:id="@+id/text_device_conf_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/elevation_drawable"
+            android:elevation="4dp"
+            android:paddingBottom="@dimen/small_dimen"
+            android:paddingEnd="@dimen/default_dimen"
+            android:paddingStart="@dimen/default_dimen"
+            android:paddingTop="@dimen/small_dimen"
+            android:text="@string/communication_configuration"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/text_extra_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/default_dimen"
+            android:text="@string/extra_sign_settings"
+            android:textColor="@color/colorPrimaryVariant" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginEnd="@dimen/default_dimen"
+            android:layout_marginStart="@dimen/default_dimen"
+            android:background="@color/colorAccent" />
+
+        <RelativeLayout
+            android:id="@+id/root_show_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/text_show_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/check_show_list"
+                android:padding="@dimen/default_dimen"
+                android:text="@string/show_file_list"
+                android:textColor="@color/colorPrimaryVariant" />
+
+            <CheckBox
+                android:id="@+id/check_show_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text_show_list"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/text_show_list"
+                android:padding="@dimen/default_dimen" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/default_dimen"
+            app:cardCornerRadius="8dp">
+
+            <Button
+                android:id="@+id/text_extra_sign_default"
+                style="@style/CommandButtons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/medium_dimen"
+                android:paddingTop="@dimen/medium_dimen"
+                android:text="@string/set_default" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_arduino_conf_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/elevation_drawable"
+            android:elevation="4dp"
+            android:paddingBottom="@dimen/small_dimen"
+            android:paddingEnd="@dimen/default_dimen"
+            android:paddingStart="@dimen/default_dimen"
+            android:paddingTop="@dimen/small_dimen"
+            android:text="@string/arduino_configuration"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/text_variable_separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/default_dimen"
+            android:text="@string/variable_separator_info"
+            android:textColor="@color/colorPrimaryVariant" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginEnd="@dimen/default_dimen"
+            android:layout_marginStart="@dimen/default_dimen"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/text_package_separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/default_dimen"
+            android:text="@string/package_separator_info"
+            android:textColor="@color/colorPrimaryVariant" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/default_dimen"
+            app:cardCornerRadius="8dp">
+
+            <Button
+                android:id="@+id/text_arduino_conf_default"
+                style="@style/CommandButtons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/medium_dimen"
+                android:paddingTop="@dimen/medium_dimen"
+                android:text="@string/set_default" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

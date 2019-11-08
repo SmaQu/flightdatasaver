@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/root_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/text_extra_sign_file_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/check_extra_sign"
+            android:padding="@dimen/default_dimen"
+            android:text="@string/extra_sign_settings" />
+
+        <CheckBox
+            android:id="@+id/check_extra_sign"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@+id/text_extra_sign_file_list"
+            android:layout_alignBottom="@+id/text_extra_sign_file_list"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/default_dimen" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_file_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/root_check_box" />
+
+</RelativeLayout>

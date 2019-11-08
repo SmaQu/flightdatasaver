@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="micro_dimen">3dp</dimen>
+    <dimen name="small_dimen">6dp</dimen>
+    <dimen name="medium_dimen">9dp</dimen>
+    <dimen name="default_dimen">12dp</dimen>
+    <dimen name="bid_dimen">18dp</dimen>
+    <dimen name="double_default_dimen">24dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_default">18sp</dimen>
+    <dimen name="text_size_double_default">24sp</dimen>
+</resources>

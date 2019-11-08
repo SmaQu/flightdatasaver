@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_axis_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_title_background"
+        android:gravity="center"
+        android:padding="@dimen/medium_dimen"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_default"
+        tools:text="Data value" />
+
+    <RadioGroup
+        android:id="@+id/group_axis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_dimen">
+
+        <RadioButton
+            android:id="@+id/button_no_axis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/medium_dimen"
+            android:text="@string/no_axis"
+            android:textColor="@color/colorPrimaryVariant"
+            android:textSize="@dimen/text_size_medium" />
+
+        <RadioButton
+            android:id="@+id/button_first_y_axis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/medium_dimen"
+            android:text="@string/axis_y_one"
+            android:textColor="@color/colorPrimaryVariant"
+            android:textSize="@dimen/text_size_medium" />
+
+        <RadioButton
+            android:id="@+id/button_second_y_axis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/medium_dimen"
+            android:text="@string/axis_y_two"
+            android:textColor="@color/colorPrimaryVariant"
+            android:textSize="@dimen/text_size_medium" />
+
+    </RadioGroup>
+</LinearLayout>

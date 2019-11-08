@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_title_background"
+        android:gravity="center"
+        android:padding="@dimen/medium_dimen"
+        android:text="@string/bluetooth"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_default" />
+
+    <TextView
+        android:id="@+id/text_connection_type_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/default_dimen"
+        android:text="@string/bluetooth_connection_info"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_default"
+        app:layout_constraintTop_toBottomOf="@+id/text_dialog_title" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/root_pin_connection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_dimen"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/root_without_pin_connection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_connection_type_info">
+
+        <Button
+            android:id="@+id/button_pin_connection"
+            style="@style/CommandButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/medium_dimen"
+            android:paddingEnd="@dimen/double_default_dimen"
+            android:paddingStart="@dimen/double_default_dimen"
+            android:paddingTop="@dimen/medium_dimen"
+            android:text="@string/with_pin" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/root_without_pin_connection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_dimen"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/root_pin_connection"
+        app:layout_constraintTop_toBottomOf="@+id/text_connection_type_info">
+
+        <Button
+            android:id="@+id/button_without_pin_connection"
+            style="@style/CommandButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/medium_dimen"
+            android:paddingEnd="@dimen/double_default_dimen"
+            android:paddingStart="@dimen/double_default_dimen"
+            android:paddingTop="@dimen/medium_dimen"
+            android:text="@string/without_pin" />
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

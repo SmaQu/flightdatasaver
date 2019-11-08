@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/root_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccentVariant"
+        android:elevation="2dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/root_save_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_dimen"
+            app:cardCornerRadius="8dp">
+
+            <Button
+                android:id="@+id/bt_save_file"
+                style="@style/CommandButtons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="@dimen/small_dimen"
+                android:drawableStart="@drawable/ic_save_24dp"
+                android:paddingBottom="@dimen/medium_dimen"
+                android:paddingEnd="@dimen/double_default_dimen"
+                android:paddingStart="@dimen/double_default_dimen"
+                android:paddingTop="@dimen/medium_dimen"
+                android:text="@string/save" />
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_edit_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/root_actions"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:overScrollMode="always"
+        android:paddingEnd="@dimen/medium_dimen"
+        android:paddingStart="@dimen/medium_dimen"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:textColor="@color/colorPrimaryVariant"
+        tools:ignore="LabelFor,TextFields" />
+
+</RelativeLayout>

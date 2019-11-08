@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_title_background"
+        android:gravity="center"
+        android:padding="@dimen/medium_dimen"
+        android:text="@string/not_compatible"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_default" />
+
+    <TextView
+        android:id="@+id/text_dialog_title_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_dialog_title"
+        android:gravity="center"
+        android:paddingEnd="@dimen/bid_dimen"
+        android:paddingStart="@dimen/bid_dimen"
+        android:paddingTop="@dimen/bid_dimen"
+        android:text="@string/device_not_support_bt"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_default" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/root_close_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_dialog_title_info"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/default_dimen"
+        app:cardCornerRadius="8dp">
+
+        <Button
+            android:id="@+id/button_close_device"
+            style="@style/CommandButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="@dimen/small_dimen"
+            android:drawableStart="@drawable/ic_android_24dp"
+            android:paddingBottom="@dimen/medium_dimen"
+            android:paddingEnd="@dimen/double_default_dimen"
+            android:paddingStart="@dimen/double_default_dimen"
+            android:paddingTop="@dimen/medium_dimen"
+            android:text="@string/close_app" />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

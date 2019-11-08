@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/small_dimen"
+        android:text="@string/select_file"
+        android:textSize="@dimen/text_size_medium" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_graph_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.smaqu.rcgraphsystem.GraphViewExtend
+        android:id="@+id/graph_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
